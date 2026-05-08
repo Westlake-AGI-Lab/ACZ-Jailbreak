@@ -1,0 +1,4 @@
+Pillow>=8.0.0
+reportlab>=3.6.0
+pdf2image>=1.16.0
+requests>=2.31.0

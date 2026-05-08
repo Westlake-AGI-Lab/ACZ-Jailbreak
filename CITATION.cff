@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the ACL 2026 Findings paper."
+title: "Hard to Read, Easy to Jailbreak: How Visual Degradation Bypasses MLLM Safety Alignment"
+authors:
+  - family-names: Song
+    given-names: Zhixue
+  - family-names: Han
+    given-names: Boyan
+  - family-names: Wang
+    given-names: Yiwei
+  - family-names: Zhang
+    given-names: Chi
+year: 2026
+conference: "Findings of the Association for Computational Linguistics: ACL 2026"
+repository-code: "https://github.com/Westlake-AGI-Lab/ACZ-Jailbreak"

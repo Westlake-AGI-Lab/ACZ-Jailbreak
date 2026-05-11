@@ -4,15 +4,16 @@
 
 **Paper:** [arXiv:2605.07250](https://arxiv.org/abs/2605.07250) · [PDF](https://arxiv.org/pdf/2605.07250)
 
+<p align="center">
+  <img src="assets/paper-pipeline.png" alt="ACZ-Jailbreak overview: visually degraded harmful text can bypass safety alignment, while structured cognitive offloading restores refusal behavior." width="100%">
+</p>
+
 ACZ-Jailbreak exposes a counter-intuitive safety failure in multimodal large language models: rendering harmful text as visually degraded images can make models more likely to follow harmful instructions. This happens even when the image remains legible and OCR accuracy is still high.
 
 The core phenomenon is the **Attack Comfort Zone (ACZ)**. At very low resolution, models cannot read the text and the attack fails; at high resolution, safety alignment is reactivated and models usually refuse. In the middle, however, degraded but readable images can overload visual recognition, delaying or weakening safety auditing. We describe this mechanism as **Visual Cognitive Overload**.
 
 We also study a simple mitigation, **Structured Cognitive Offloading**, which forces the model to first transcribe the image, then evaluate safety, and only then respond. This serialized workflow substantially reduces ACZ-style jailbreak behavior.
 
-<p align="center">
-  <img src="assets/paper-pipeline.png" alt="ACZ-Jailbreak overview: visually degraded harmful text can bypass safety alignment, while structured cognitive offloading restores refusal behavior." width="100%">
-</p>
 
 This repository is a lightweight release of the core data and scripts used to generate DPI-controlled text images, evaluate text/image jailbreak behavior across model providers, judge model outputs, and summarize attack success rates.
 

@@ -2,6 +2,8 @@
 
 > Findings of **ACL 2026**
 
+**Paper:** [arXiv:2605.07250](https://arxiv.org/abs/2605.07250) · [PDF](https://arxiv.org/pdf/2605.07250)
+
 ACZ-Jailbreak exposes a counter-intuitive safety failure in multimodal large language models: rendering harmful text as visually degraded images can make models more likely to follow harmful instructions. This happens even when the image remains legible and OCR accuracy is still high.
 
 The core phenomenon is the **Attack Comfort Zone (ACZ)**. At very low resolution, models cannot read the text and the attack fails; at high resolution, safety alignment is reactivated and models usually refuse. In the middle, however, degraded but readable images can overload visual recognition, delaying or weakening safety auditing. We describe this mechanism as **Visual Cognitive Overload**.
@@ -173,6 +175,10 @@ The text-to-image renderer follows the visual-text rendering setup of [Glyph](ht
   title = {Hard to Read, Easy to Jailbreak: How Visual Degradation Bypasses MLLM Safety Alignment},
   author = {Song, Zhixue and Han, Boyan and Wang, Yiwei and Zhang, Chi},
   booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
-  year = {2026}
+  year = {2026},
+  eprint = {2605.07250},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CL},
+  url = {https://arxiv.org/abs/2605.07250}
 }
 ```
